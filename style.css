@@ -2,9 +2,50 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-
+*::selection{
+  color: white;
+  background-color: #000;
+}
 html, body {
   height: 100%;
   width: 100%;
+}
+#page1{
+  min-height: 100vh;
+  /* background-color: aqua; */
+  position: relative;
+  width: 100%;
+  padding: 0 0.8vw;
+  padding-top: 18vh;
+}
+#page1 h1{
+  font-size: 15.3vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 13vw;
+  letter-spacing: -9px;
+}
+#video-container{
+  height: 100vh;
+  width: 100%;
+  /* background-color: grey; */
+  position: relative;
+  margin-top: 1vw;
+}
+#video-container video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#video-container #play{
+  position: fixed;
+  padding: 3vw 2vw;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5vw;
+  opacity: 0;
+  scale: 0;
 }
