@@ -18,3 +18,4 @@ videocon.addEventListener("mousemove", (dets) => {
     top: dets.y-30,
   })
 })
+// taking some rest for a while hope u will understand that
