@@ -49,7 +49,7 @@ html, body {
   opacity: 0;
   scale: 0;
 }
-#page-2{
+#page2{
   height: 100vh;
   width: 100%;
   position: relative;
@@ -58,13 +58,15 @@ html, body {
   padding: 3vw 1vw;
   justify-content: space-between;
 }
-#page-2 .elem{
+#page2 .elem{
   height: 100%;
   width: 31%;
   /* background-color: red; */
+  overflow: hidden;
 }
-#page-2 .elem img{
+#page2 .elem img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  scale: 1.2;
 }
