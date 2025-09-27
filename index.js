@@ -1,4 +1,10 @@
-const videocon = document.querySelector("#video-container");
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+function videoconAnimation(){
+  const videocon = document.querySelector("#video-container");
 const playbtn = document.querySelector("#play")
 videocon.addEventListener("mouseenter", () => {
   gsap.to(playbtn, {
@@ -18,4 +24,22 @@ videocon.addEventListener("mousemove", (dets) => {
     top: dets.y-30,
   })
 })
-// taking some rest for a while hope u will understand that
+}
+videoconAnimation()
+
+function loadingAnimation(){
+  gsap.from("#page1 h1", {
+  y: 100,
+  opacity: 0,
+  delay:0.5,
+  duration: 0.9,
+  stagger:0.3
+})
+gsap.from("#page1 #video-container", {
+  scale:0.9,
+  opacity: 0,
+  delay:1.2,
+  duration: 0.5,
+})
+}
+loadingAnimation()
